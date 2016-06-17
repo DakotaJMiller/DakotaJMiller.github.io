@@ -1,0 +1,130 @@
+.main{
+    background-image: url("http://www.salttechno.com/wp-content/uploads/2015/08/web-designer-pune-background.jpg");
+    background-size: cover;
+    padding: 10%;
+    text-align: center;
+    font-size: 50px;
+    color: black;  
+}
+.main-header{
+    font-style: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+}
+.main-g{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+}
+.about-g{
+    
+    font-size: 35px;
+}
+.about-me{
+     font-style: 50px;
+     font-style: italic;
+     text-align: center;
+}
+.about-me-info{
+    text-align: center;
+     line-height: 50px;
+}
+
+
+
+
+.second-header{
+    background-color: steelblue;
+    margin-top: -31px;
+    font-size: 50px;
+    color: white;
+    padding: 5%;
+}
+.projects-done{
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+}
+.projects-info{
+    font-size: 20px;
+    text-align: center;
+     line-height: 50px;
+}
+.btn-projects{
+    background-color: white;
+    font-size: 30px;
+    color: black;
+    margin-left: 35%;
+    width: 200px;
+    height: 70px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 24px;
+}
+#picture-projects{
+    margin-left: 5%;
+    height: 70%; 
+}
+
+
+.third-header{
+    padding: 5%;
+}
+.resume{
+    font-size: 50px;
+    font-style: italic;
+    color: slateblue;
+    text-align: center;
+
+}
+.resume-info{
+    font-size: 20px;
+    color: slateblue;
+    text-align: center;
+    line-height: 50px;
+}
+.btn-resume{
+    background-color: white;
+    font-size: 30px;
+    color: slateblue;
+    margin-left: 40%;
+    width: 200px;
+    height: 70px;
+    border: 4px solid black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 24px;
+}
+
+.fourth-header{
+    background-color: powderblue;
+    padding: 5%;
+    
+}
+.contact-me{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+            
+}
+
+.email-me{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.social-media{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.contact-info{
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
