@@ -22,3 +22,23 @@ function drawSongs(songList){
   //set the unodered list in HTML to empty string
     listOfSongs.innerHTML = songs;
 }
+
+var currentPlay;
+var nextPlay;
+
+document.addEventListener("play", function (click) {
+  if(currentPlay){
+    currentPlay.pause();   
+  } 
+    nextPlay = event.target;
+    nextPlay.play();
+
+    nextPlay.addEventListener("playing", function() {
+      currentPlay = true;
+    })
+    nextPlay.addEventListener("pause", function(){
+      currentPlay = false;
+    })
+
+    
+}, true)
