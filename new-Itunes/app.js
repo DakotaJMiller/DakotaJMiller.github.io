@@ -30,7 +30,7 @@ document.addEventListener("play", function (click) {
   if(currentPlay){
     currentPlay.pause();   
   } 
-    nextPlay = event.target;
+    nextPlay = click.target;
     nextPlay.play();
 
     nextPlay.addEventListener("playing", function() {
