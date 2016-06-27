@@ -1,0 +1,52 @@
+.main-body{
+background-image: url(http://www.psdgraphics.com/file/fire-bokeh-background.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+.container-fluid{
+    margin-top: 5%;
+    text-align: center;
+}
+.form-control{
+    text-align: center;
+    font-size: 40px;
+    height: 50px;
+    background-color: white;
+    border-width: 1px;
+    border: solid black;
+    border-radius: 10px;
+    
+}
+.btn{
+    font-size: 20px;
+     border-radius: 10px;
+    
+   
+}
+.list-group-item{
+    opacity: .8;
+    font-size: 25px;
+    padding: 15px;
+    margin: 5px;
+}
+.intro-header1{  
+    font-size: 150px;
+    font-family: 'Lobster', cursive;
+    color: white; 
+    margin: -20px;
+    
+}
+.intro-header2{
+    text-align: center;
+    font-size: 150px;
+    font-family: 'Lobster', cursive;
+    color:white;
+    margin: -20px;
+}
+.intro-header3{
+    text-align: right;
+    font-size: 150px;
+    font-family: 'Lobster', cursive;
+    color:white;
+    padding: -20px;
+}
