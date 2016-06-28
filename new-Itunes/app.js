@@ -26,19 +26,11 @@ function drawSongs(songList){
 var currentPlay;
 var nextPlay;
 
-document.addEventListener("play", function (click) {
-  if(currentPlay){
-    currentPlay.pause();   
-  } 
-    nextPlay = click.target;
-    nextPlay.play();
-
-    nextPlay.addEventListener("playing", function() {
-      currentPlay = true;
-    })
-    nextPlay.addEventListener("pause", function(){
-      currentPlay = false;
-    })
-
-    
-}, true)
+document.addEventListener('play', function(e){
+   var audios = document.getElementsByTagName('audio');
+   for(var i = 0, len = audios.length; i < len;i++){
+       if(audios[i] != e.target){
+           audios[i].pause();
+       }
+   }
+}, true);
