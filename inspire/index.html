@@ -1,0 +1,108 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Inspire</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+	
+</head>
+
+<body id="body">
+	<div class="container-fluid">
+		<div class="header row">
+			<div class="col-md-1 col-xs-3">
+				<div id ="weather">
+			</div>
+				</div>
+			<div class="col-md-2 col-md-offset-9 col-xs-4 col-xs-offset-5">
+   		 		<form class = "form-todo">
+					<center><h3>To-Do List</h3>
+					<h4 id = "results"></h4>
+        		<input type = "text" name ="newInput" id = "input-style">
+				<button type = "submit" id = "add">Add To List</button><hr>
+					<u><h5>Click to remove items</h5></u></center>
+				<div id="todos">
+				</div>
+        		</form>
+			</div>
+			</div>
+		<div class="container">
+		<div class="row">
+			<div class="clock">
+			<div id="Date"></div>
+  				<ul>
+      				<li id="hours"></li>
+      				<li id="point">:</li>
+     				 <li id="min"></li>
+     				 <li id="point">:</li>
+     				 <li id="sec"></li>
+ 				 </ul>
+			</div>
+			</div>
+		</div>
+		<br>	
+		<div class="row">
+			<div class="col-xs-offset-2 col-xs-8 col-xs-offset-2">
+				<div id="quote">
+				</div>
+				</div>
+		</div>
+		</div>
+	
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+		var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
+		var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+
+		var newDate = new Date();
+
+		newDate.setDate(newDate.getDate());
+ 
+		$('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+
+		setInterval( function() {
+	
+			var seconds = new Date().getSeconds();
+	
+			$("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+			},1000);
+	
+		setInterval( function() {
+	
+			var minutes = new Date().getMinutes();
+	
+			$("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+   			 },1000);
+	
+		setInterval( function() {
+	
+			var hours = new Date().getHours();
+	
+			$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+   			 }, 1000);	
+});
+</script>
+
+	<script src="app/init.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="app/components/weather/weather-service.js"></script>
+	<script src="app/components/image/image-service.js"></script>
+	<script src="app/components/quote/quote-service.js"></script>
+	<script src="app/components/todo/todo-service.js"></script>
+
+	<!--Load your scripts below-->
+	<script src="app/components/weather/weather-controller.js"></script>
+	<script src="app/components/image/image-controller.js"></script>
+	<script src="app/components/quote/quote-controller.js"></script>
+	<script src="app/components/todo/todo-controller.js"></script>
+
+</body>
+
+</html>
